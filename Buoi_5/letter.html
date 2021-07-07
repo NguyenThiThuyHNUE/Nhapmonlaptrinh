@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viết thư</h1>
+    
+        <label for="name"> Nhập tên:</label>
+        <input id="name" type="text"> <br/><br/>
+
+        <label for="adress"> Nhập địa chỉ: </label>
+        <input id="adress" type="text"><br/><br/>
+
+        <label for="date"> Nhập ngày</label>
+        <input id="date" type="date" name="" ><br/><br/>
+        
+        <button type="submit" onclick="get_info()">Tạo</button>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+    function get_info() {
+        let name = document.getElementById("name").value;
+        let adress = document.getElementById("adress").value;
+        let date = document.getElementById("date").value;
+
+        let result = "";
+        result += name + "   thương nhớ," + "Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều  "
+        +adress +", ngày   "+ date;
+        console.log(result);
+        document.getElementById("result").innerHTML = result;
+    }
+    
+</script>
