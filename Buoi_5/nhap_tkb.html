@@ -37,7 +37,7 @@
         <form action="">
             <tr>
                 <td>Lớp: </td>
-                <td><input type="text"></td>
+                <td><input type="text" placeholder="12A"></td>
                 <td></td>
                 <td>Thời gian học: </td>
                 <td>
@@ -50,18 +50,16 @@
             </tr>
             <tr>
                 <td>Giáo viên: </td>
-                <td><input type="text"></td>
+                <td><input type="text" placeholder="Nguyễn Văn A"></td>
                 <td></td>
                 <td>Ngày học: </td>
                 <td>
-                    <select name="time_date" id="">
-                        <option value="le">Thứ 3, 5, 7</option>
-                        <option value="chan">Thứ 2,4,6</option>
-                    </select>
+                    <input type="radio" value="le" id="le" name="le" checked ><span>Thứ 3, 5, 7</span>
+                    <input type="radio" value="chan" id="chan" name="le"><span>Thứ 2,4,6</span>
                 </td>
             </tr>
             <tr>
-                <td>Phòng hoc: </td>
+                <td>Phòng học: </td>
                 <td>
                     <select name="class" id="">
                         <option value="A">A1</option>
@@ -119,6 +117,7 @@
                 <td><input type="text" name="" id=""></td>
             </tr> 
         </form>
+        <textarea></textarea>
     </table>   
 </body>
 </html>
