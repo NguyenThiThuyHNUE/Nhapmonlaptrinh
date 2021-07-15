@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính</title>
+</head>
+<body>
+   
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <br/>
+    <br/>
+    <span><button onclick="cong()">+</button></span>
+    <span><button onclick="tru()">-</button></span>
+    <span><button onclick="nhan()">x</button></span> 
+    <span><button onclick="chia()">:</button></span> 
+    <br/>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    let number1 = document.getElementById('num1').value;
+    let number2 = document.getElementById('num2').value;
+    console.log(number1)
+
+ function cong(){
+     let tong = number1 + number1;
+     console.log(tong);
+     document.getElementById('result').innerHTML = tong;
+ }
+</script>
