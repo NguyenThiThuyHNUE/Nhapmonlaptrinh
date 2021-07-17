@@ -12,10 +12,13 @@
 </html>
 
 <script>
-    tien_vay = prompt("Nhập khoản tiền vay");
-    lai_suat = prompt("Nhập lãi suất");
-    nam = prompt("Nhập số năm muốn vay")
+    let tien_vay = prompt("Nhập khoản tiền vay");
+    let lai_suat = prompt("Nhập lãi suất %");
+    let nam = prompt("Nhập số năm muốn vay")
+    
+    let tien_lai = tien_vay * lai_suat/100;
+    console.log(tien_lai);
 
-    let tien_phai_tra = tien_vay + nam * lai_suat;
-    document.write ("Số tiền phải trả là: " + tien_phai_tra);
+    let tien_phai_tra = parseInt(tien_vay) + parseInt(nam * tien_lai);
+    document.write ("Số tiền phải trả là: " + tien_phai_tra + "VNĐ");
 </script>
