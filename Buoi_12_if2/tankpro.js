@@ -1,4 +1,15 @@
+        let top_tank = parseInt(document.getElementById("tank").style["top"]);
+        console.log(top_tank);
+        let left_tank = parseInt(document.getElementById("tank").style["left"]);
+        console.log(left_tank);
+        document.getElementById("tank").style["top"] =  top_tank - 19 + "px";
+        let top_boom = parseInt(document.getElementById("boom").style["top"]);
+        console.log(top_boom);
+        let left_boom = parseInt(document.getElementById("boom").style["left"]);
+        console.log(left_boom);
 
+
+        
       function explosion() {
         let top_tank = parseInt(document.getElementById("tank").style["top"]);
         let left_tank = parseInt(document.getElementById("tank").style["left"]);
@@ -19,6 +30,8 @@
         console.log(top_boom);
         let left_boom = parseInt(document.getElementById("boom").style["left"]);
         console.log(left_boom);
+
+
         if (top_tank == top_boom && left_tank == left_boom) {
             document.getElementById("tank").style.backgroundImage = "url('img/explosion.png')"
         }

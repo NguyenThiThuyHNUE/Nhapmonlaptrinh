@@ -3,7 +3,9 @@ function ChangeMoney() {
     let FromC = document.getElementById("From").value;
     let To = document.getElementById("To").value;
     let Result;
-    if (FromC == "USD" && To == "VND"){
+
+
+    if (FromC == "USD" && To == "VND") {
         Result = "Result: " + (Amount * 23000) + " Đ";
     }
     else if (FromC == "VND"&& To =="USD"){
