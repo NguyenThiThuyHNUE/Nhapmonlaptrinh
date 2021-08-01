@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if - else
+        // let pass = prompt("Nhập mật khẩu");
+        // if (pass == "123456") {
+        //     document.write(" Mật khẩu đúng. Mời vào");
+        // } else {
+        //     alert(" Vui lòng nhập lại")
+        // } 
+
+
+        // while
+        // Trong khi người dùng nhập sau mật khẩu thì cứ yêu cầu người dùng nhập lại mật khẩu
+    //    debugger;
+
+        // let pass = prompt("Nhập mật khẩu");
+        // while (pass !== "123456") {
+        //     alert("Vui lòng nhập lại");
+        //     pass = prompt("Nhập mật khẩu");
+        // }
+        // document.write("Mật khẩu đúng. Mời vào"); 
+
+
+        //do-while
+        // thực hiện hành động trong khi điều kiện đúng
+        // let pass;
+        // do {
+        //     pass = prompt("Nhập mật khẩu");
+        // } while (pass !== "123456")
+        // document.write("Mật khẩu đúng. Mời vào");  
+        
+        
+        //  while - break
+        // Người dùng nhập sai 5 lần sẽ bị khóa đăng nhập
+        let pass = prompt("Nhập mật khẩu");
+        let count_wrong = 0;
+        while (pass !== "123456") {
+            count_wrong++;     // tăng thêm một lần sai lên 1
+            if (count_wrong == 5) { // số lần sau là 5
+                break;             // Dừng vòng lặp
+            }
+            // bỏ qua 2 câu lệnh này
+            alert("Vui lòng nhập lại");
+            pass = prompt("Nhập mật khẩu");
+        }
+
+        if (count_wrong == 5) {
+            document.write("Bạn bị khóa đăng nhập");
+        } else {
+            document.write("Mật khẩu đúng. Mời vào");
+        }
+    </script>
+</body>
+</html>

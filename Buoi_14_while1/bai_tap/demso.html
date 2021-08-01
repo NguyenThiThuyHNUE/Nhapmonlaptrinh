@@ -8,7 +8,15 @@
 </head>
 <body>
     <script>
+        // Lặp từ 0 -> 99 : Lặp 100 lần
+        let num = 0;
+        while (num < 100) { // 99 vẫn đúng
+            num ++;
+            if (num % 2 == 0) {
+                continue;
+            }
+            document.write (num + "<br>");
+        }
     </script>
-    
 </body>
 </html>
