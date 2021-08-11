@@ -1,3 +1,4 @@
+
 let array = Array("Nguyen Van A","Nguyen Van B");
 
 function add_element_to_array() {
