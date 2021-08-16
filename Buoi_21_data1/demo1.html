@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function sum(num1,num2,num3) {
+        //     let total = num1 + num2 + num3;
+        //     return total;
+        // }
+        // let num1 = +prompt("Nhập số thứ nhất");
+        // let num2 = +prompt("Nhập số thứ hai");
+        // let num3 = +prompt("Nhập số thứ ba");
+        // document.write(sum(num1,num2,num3));
+
+        function sum(start, end) {
+            let total = 0;
+            for (let i = start; i <= end; i++) {
+                total += i;
+            }
+            return total;
+        }
+        function main() {
+            let start = +prompt("Nhập số đầu");
+            let end = +prompt("Nhập số cuối");
+            console.log(sum(start,end));
+        }
+        main();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <button onclick="sum()">Tổng</button>
+    <p id="result"></p> -->
+    <script>
+
+        // function sum() {
+        //     let num1 = +document.getElementById("num1").value;
+        //     let num2 = +document.getElementById("num2").value;
+        //     let result = num1 + num2;
+        //     document.getElementById("result").innerHTML = result;
+        // }
+
+
+        //Hàm tính tổng 2 số 
+        function sumNumber(num1,num2) {
+            let result = num1 + num2;
+            return result;
+        }
+        let num1 = +prompt("Nhập số thứ nhất")
+        let num2 = +prompt("Nhập số thứ hai")
+        document.write(sumNumber(num1,num2));
+        
+        //Hàm tính chu vi hình chữ nhật
+        function cvHCN (sum, number) {
+            return sum * number 
+        }
+        document.write("Chu vi hình chữ nhật là: " + cvHCN(sumNumber(num1, num2), 2))
+
+    </script>
+</body>
+</html>
