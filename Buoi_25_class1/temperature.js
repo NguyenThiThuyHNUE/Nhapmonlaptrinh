@@ -9,6 +9,14 @@ class Temperature {
     }
 
     kelvins() {
-        return this.celsius + 273,15
+        return this.celsius + 273.15
     }
 }
+
+let temperature = new Temperature(25);
+let my_fahrenheit = temperature.fahrenheit();
+let my_kelvins = temperature.kelvins();
+
+document.write("Nhiệt độ K: " + my_kelvins + "<br>"
+                + "Nhiệt độ F: " + my_fahrenheit)
+
