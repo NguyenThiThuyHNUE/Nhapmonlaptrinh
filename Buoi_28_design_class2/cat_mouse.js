@@ -1,10 +1,11 @@
 class Mouse {
     status;
-    sound;
+    sound_mouse;
     constructor(name, weight, speed) {
         this.name_mouse = name;
         this.weight_mouse = weight;
         this.speed_mouse = speed;
+
     }
 
     getStatus() {
@@ -14,6 +15,7 @@ class Mouse {
             alert("Chuột chết");
         }
     }
+
     Die() {
         return this.status = false;
     }
@@ -43,6 +45,14 @@ class Cat {
         return this.weight_cat;
     }
 
+    setSoundCat(sound_cat) {
+        this.sound_cat = sound_cat;
+    }
+
+    getSoundCat() {
+        alert(this.sound_cat);
+    }
+
     actionCat(sound) {
         this.sound_cat = sound; 
         alert(this.sound_cat);
@@ -58,7 +68,7 @@ class Cat {
 
     eatTheMouse() {
         if (this.mouse.status) {
-            this.weight_cat += this.mouse.weight_mouse;
+            this.weight_cat = this.weight_cat +  this.mouse.weight_mouse;
             this.mouse.status = false;
             alert("Chuột đã bị mèo ăn");
         }
@@ -68,6 +78,7 @@ class Cat {
 
 let Rat = new Mouse("Rat", 10, 100);
 let Tom = new Cat("Tom", 20, 200, Rat);
+
 Rat.noDie()
 
 Tom.catchTheMouse();
