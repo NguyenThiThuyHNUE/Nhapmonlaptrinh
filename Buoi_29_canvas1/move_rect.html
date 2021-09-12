@@ -13,12 +13,12 @@
     let carYPosition = 20;
     let carXPosition = 20;
 
-    let carWidth = 150;
+    let carWidth = 250;
     let carHeight = 100;
 
     let gameTopPosition = 0;
     let gameBottomPosition = 600;
-    let timeLoop = 10;
+    let timeLoop = 5;
 
     function drawCar() {
       gameContext.beginPath();
@@ -26,17 +26,17 @@
       gameContext.fillRect(carXPosition, carYPosition, carWidth, carHeight);
     }
 
-    let yDistance = 1;
+    let yDistance = 2;  
     function moveCar() {
       gameContext.clearRect(carXPosition, carYPosition, carWidth, carHeight);
 
       let isTouchTop = carYPosition < gameTopPosition;
-      let isTouchBottom = carYPosition + carHeight > gameBottomPosition;
+      let isTouchBottom = carYPosition + carHeight > gameBottomPosition; // true
       if (isTouchTop || isTouchBottom) {
-        yDistance = -yDistance;
+        yDistance = -yDistance;  //  -2         -(-2)
       }
 
-      carYPosition += yDistance;
+      carYPosition += yDistance;  // 499 + (-2) == 497 + (-2)
       drawCar();
     }
     setInterval(moveCar, timeLoop);

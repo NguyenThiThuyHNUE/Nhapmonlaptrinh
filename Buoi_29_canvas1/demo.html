@@ -11,9 +11,9 @@
     <script>
         let canvas = document.getElementById("myCanvas"); // vẽ hình trên canvas có id là "myCanvas"
         let ctx = canvas.getContext("2d"); // ;Vẽ hình 2d
-        ctx.beginPath();
         //Vẽ hình chữ nhật
-        ctx.fillStyle = "#1b1b1b";
+        ctx.fillStyle = "red";
+        ctx.shadowColor = "black";
         ctx.fillRect(0,0,200, 100);
 
         // vẽ hình tròn
